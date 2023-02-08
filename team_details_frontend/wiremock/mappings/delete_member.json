@@ -1,0 +1,16 @@
+{
+  "request": {
+    "method": "DELETE",
+    "url": "/api/member/1"
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json text/plain",
+      "Access-Control-Allow-Origin": "*"
+    },
+    "jsonBody": {
+      "success": true
+    }
+  }
+}

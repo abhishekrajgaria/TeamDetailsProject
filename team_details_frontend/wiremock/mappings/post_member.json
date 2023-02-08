@@ -1,0 +1,15 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/api/member/add"
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Access-Control-Allow-Origin": "*"
+    },
+    "jsonBody": {
+      "success": true
+    }
+  }
+}

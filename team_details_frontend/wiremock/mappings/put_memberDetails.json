@@ -1,0 +1,15 @@
+{
+  "request": {
+    "method": "PUT",
+    "url": "/api/member/1"
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Access-Control-Allow-Origin": "*"
+    },
+    "jsonBody": {
+      "success": true
+    }
+  }
+}

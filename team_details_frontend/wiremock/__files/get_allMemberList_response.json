@@ -1,0 +1,25 @@
+{
+  "data": [
+    {
+      "id": "1",
+      "firstname": "Abhishek",
+      "lastname": "Rajgaria",
+      "role": "ASDE1",
+      "primaryStack": "React"
+    },
+    {
+      "id": "2",
+      "firstname": "John",
+      "lastname": "Doe",
+      "role": "ASDE2",
+      "primaryStack": "GoLang"
+    },
+    {
+      "id": "3",
+      "firstname": "Venugopal",
+      "lastname": "Iyer",
+      "role": "SDE2",
+      "primaryStack": "React"
+    }
+  ]
+}
