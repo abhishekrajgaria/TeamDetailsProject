@@ -1,5 +1,5 @@
 import React from "react";
-import reducerStore from "../../redux/reducers/rootReducer";
+import {combineReducer} from "../../redux/reducers/rootReducer";
 import { Provider } from "react-redux";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from "../Home/Home.js";
@@ -9,8 +9,11 @@ import Footer from "../Footer/Footer.js";
 import Member from "../Member/Member.js";
 import AddMember from "../AddMember/AddMember.js";
 import EditMember from "../EditMember/EditMember.js";
+import {createStore} from "redux";
+
 
 const Main = () => {
+  const reducerStore = createStore(combineReducer);
   return (
     <Router>
       <Provider store={reducerStore}>

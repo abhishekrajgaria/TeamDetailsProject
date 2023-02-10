@@ -7,7 +7,7 @@ import {
   deleteMemberReducer,
 } from "./memberReducer/memberReducer";
 
-const combineReducer = combineReducers({
+export const combineReducer = combineReducers({
   teamReducer,
   getMemberReducer,
   addMemberReducer,

@@ -2,11 +2,9 @@ import React from "react";
 
 const Home = () => {
   return (
-    <div
-      className="container "
-    >
-      <h3>Welcome to Team Details ! </h3>
-      <p>
+    <div className="container ">
+      <h3 data-testid="home-header">Welcome to Team Details !</h3>
+      <p data-testid="home-para">
         Team is composed of members who are dependent on each other, work
         towards interchangeable achievements, and share common attainments. A
         team works as a whole together to achieve certain things. A team is
