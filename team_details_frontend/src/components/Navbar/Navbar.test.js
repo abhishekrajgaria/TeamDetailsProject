@@ -1,12 +1,13 @@
 import Navbar from "./Navbar";
-import { screen} from '@testing-library/react';
+import {  screen} from '@testing-library/react';
 import { renderWithRouter } from "../../utils/testUtils";
 
 describe('Navbar test',()=>{
     test('should render the navbar',()=>{
         renderWithRouter(<Navbar/>);
-        const navbarElment = screen.getAllByText();
-        console.log(navbarElment);
-        // expect(screen.getByTestId()).toBeInTheDocument();
+        const navbarElment = screen.getByText("Team Details");
+        expect(navbarElment).toBeInTheDocument();
+        const addNewElement = screen.getByTestId("add-new-link");
+        expect(addNewElement).toBeInTheDocument();
     })
 })

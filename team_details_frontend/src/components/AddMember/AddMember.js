@@ -21,7 +21,6 @@ const AddMember = () => {
   const clickAddHandler = async () => {
     console.log("Add New Member");
     dispatch(await addMember(member));
-    // navigate("/team");
   };
 
   useEffect(() => {
@@ -34,18 +33,15 @@ const AddMember = () => {
   }, [navigate, success, dispatch]);
 
   const handleChange = (event) => {
-    // console.log("event name", event.target.name);
-    // console.log("event value", event.target.value);
     const tempMember = { ...member };
     tempMember[event.target.name] = event.target.value;
-    // console.log("tempMember", tempMember)
     setMember(tempMember);
   };
 
   return (
     <div className="container" style={{ width: "32rem" }}>
       {success == null && (
-        <form>
+        <form data-testid="add-new-form">
           <div className="row">
             <div className="col mb-3">
               <label className="form-label">First Name</label>

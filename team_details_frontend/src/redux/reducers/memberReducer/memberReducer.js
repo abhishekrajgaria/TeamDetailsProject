@@ -94,6 +94,7 @@ export const deleteMemberReducer = (
 ) => {
   switch (action.type) {
     case DELETE_MEMBER:
+      console.log("Inside deleteMemberReducer")
       return {
         ...state,
         success: action.payload.data,

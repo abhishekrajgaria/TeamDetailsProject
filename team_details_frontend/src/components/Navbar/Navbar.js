@@ -33,7 +33,7 @@ const Navbar = () => {
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link active" to="/add_member">
+                <Link className="nav-link active" to="/add_member" data-testid="add-new-link">
                   Add New
                 </Link>
               </li>

@@ -34,7 +34,9 @@ export const updateMember = async (id, member) => {
 
 export const deleteMember = async (id) => {
   try {
+    console.log("deleteMember Action creator dispatched !!")
     const data = await axios.delete(`${memberUrl}/${id}`);
+    console.log("data", data);
     return { type: DELETE_MEMBER, payload: data };
   } catch (error) {
     return { type: DELETE_MEMBER_ERROR, payload: error.message };

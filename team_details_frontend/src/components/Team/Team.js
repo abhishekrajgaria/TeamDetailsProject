@@ -19,17 +19,21 @@ const Team = () => {
         {message !== null && <h4 className="text-center">{message}</h4>}
         {team.length === 0 && message === null && <h4>Found No Team Member</h4>}
         <div style={{ marginLeft: "39%" }}>
-          {team.length > 0 &&
-            team.map((member) => (
-              <MemberCard
-                key={member.id}
-                id={member.id}
-                firstname={member.firstname}
-                lastname={member.lastname}
-                role={member.role}
-                primaryStack={member.primaryStack}
-              />
-            ))}
+          {team.length > 0 && (
+            <>
+              <h4>Team List</h4>
+              {team.map((member) => (
+                <MemberCard
+                  key={member.id}
+                  id={member.id}
+                  firstname={member.firstname}
+                  lastname={member.lastname}
+                  role={member.role}
+                  primaryStack={member.primaryStack}
+                />
+              ))}
+            </>
+          )}
         </div>
       </div>
     </div>
